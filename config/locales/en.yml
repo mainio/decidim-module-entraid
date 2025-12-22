@@ -1,0 +1,28 @@
+---
+en:
+  decidim:
+    authorization_handlers:
+      entraid_identity:
+        explanation: Identify yourself using the Entra ID identity service.
+        name: Entra ID identity
+    entraid:
+      omniauth_callbacks:
+        failure:
+          already_authorized: Another user has already authorized themselves with the same identity.
+          csrf_detected: Invalid authentication state, CSRF detected.
+          failed_to_connect: Could not connect to the authentication server.
+          identity_bound_to_other_user: Another user has already been identified using this identity. Please sign out and sign in again directly using Entra ID.
+          invalid_api_token: Invalid token provided for the identity data.
+          invalid_credentials: Invalid authentication credentials provided. Please contact the system maintainer.
+          invalid_data: You cannot be authenticated through Entra ID.
+          timeout: Authentication request timed out.
+      verification:
+        authorizations:
+          create:
+            success: You have been successfully authorized through Entra ID
+          destroy:
+            success: Authorization successfully reset.
+          new:
+            continue: Continue without waiting
+            description: Please wait a moment, you will be redirected to the identification service...
+            title: Redirection
