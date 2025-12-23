@@ -22,6 +22,13 @@ group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
   gem "decidim-dev", DECIDIM_VERSION
+
+  # Pinned due to the following bug:
+  # https://github.com/jessebs/simplecov-cobertura/issues/48
+  #
+  # Apparently fixed in later versions of simplecov-cobertura but Decidim
+  # currently locks the version to ~> 2.1.0.
+  gem "rexml", "3.4.1"
 end
 
 group :development do
