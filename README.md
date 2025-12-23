@@ -1,6 +1,7 @@
 # Decidim::EntraID - Integrate Decidim to Microsoft Entra ID
 
 [![Build Status](https://github.com/mainio/decidim-module-entraid/actions/workflows/ci_entraid.yml/badge.svg)](https://github.com/mainio/decidim-module-entraid/actions)
+[![codecov](https://codecov.io/gh/mainio/decidim-module-entraid/branch/main/graph/badge.svg)](https://codecov.io/gh/mainio/decidim-module-entraid)
 
 A [Decidim](https://github.com/decidim/decidim) module to add Microsoft Entra ID
 authentication to Decidim as a way to authenticate and authorize the users.
