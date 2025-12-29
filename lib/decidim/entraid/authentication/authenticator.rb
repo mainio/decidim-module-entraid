@@ -15,8 +15,10 @@ module Decidim
         end
 
         def verified_email
-          @verified_email ||= oauth_data[:info][:email] ||
-                              tenant.auto_email_for(organization, person_identifier_digest)
+          @verified_email ||= (
+            oauth_data[:info][:email] ||
+              tenant.auto_email_for(organization, person_identifier_digest)
+          ).downcase
         end
 
         def user_params_from_oauth_hash
