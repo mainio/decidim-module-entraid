@@ -26,3 +26,8 @@ sv:
             continue: Fortsätt utan att vänta
             description: Vänta ett ögonblick, du kommer att omdirigeras till legitimationstjänsten...
             title: Omdirigering
+    verifications:
+      authorizations:
+        first_login:
+          actions:
+            entraid_identity: Verifiera din identitet med Entra ID

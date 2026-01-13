@@ -26,3 +26,8 @@ fi:
             continue: Jatka odottamatta
             description: Odota hetki, sinut ohjataan tunnistautumiseen...
             title: Ohjaus
+    verifications:
+      authorizations:
+        first_login:
+          actions:
+            entraid_identity: Vahvista henkilöllisyytesi Entra ID -palvelulla
